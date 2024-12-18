@@ -1,0 +1,49 @@
+# Node modules
+node_modules/
+
+# Build output (for Electron apps)
+/dist/
+/release-builds/
+/amibridge-win32-x64/
+
+# Electron packaging files
+*.dmg
+*.exe
+*.app
+*.deb
+*.tar.gz
+*.zip
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Vercel or other deployment files (optional, based on your deployment setup)
+.vscode/
+.idea/
+
+# .env files (Optional if using environment variables)
+.env
+.env.local
+.env.production
+
+# npm-debug.log, yarn-debug.log, etc.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# MacOS-specific files
+.AppleDouble
+.LSOverride
+
+# Windows Installer Files (optional)
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Other platform-specific files (for example, if targeting Windows or Linux)
+# Add as necessary

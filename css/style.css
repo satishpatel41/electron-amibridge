@@ -1,0 +1,67 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+#grid{
+    
+}
+
+.checkbox{ 
+  width: 20px; 
+  color:#fff; 
+  margin: auto; 
+}
+
+.success{ 
+background-color: #dff0d8;
+}
+
+.warning{ 
+  background-color: #f2dede;
+ 
+
+}
+
+.float{
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:10px;
+	right:10px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.inputField {
+	pointer-events: none;
+	border: none;
+	background: none;
+    color: white;
+	font-weight: 500;
+	margin-top:10px;
+  }
+
+  .badge1{
+	  color: rgb(125, 245, 94);
+	  margin-top:10px;
+  }
+
+  
+.badge2{
+	color: rgb(207, 55, 55);
+	margin-top:10px;
+}

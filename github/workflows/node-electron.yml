@@ -1,0 +1,47 @@
+name: Node.js Electron CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # or master, based on your repo setup
+  pull_request:
+    branches:
+      - main  # Automatically trigger CI/CD on PRs to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Specify the Node.js version compatible with your Electron version
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Build the Electron app
+      - name: Build Electron app
+        run: npm run build  # Replace with your build script if it's different
+
+      # Run tests (Optional)
+      - name: Run tests
+        run: npm test  # Replace with your test command, if any
+
+      # Package Electron app (optional step for building packages)
+      - name: Package Electron app
+        run: npm run package  # Replace with your packaging script (e.g., electron-builder)
+
+      # Optional: Deploy (e.g., upload to GitHub releases or other platforms)
+      # - name: Deploy to GitHub Releases
+      #   uses: softprops/action-gh-release@v1
+      #   with:
+      #     files: path/to/built/files/*  # Path to packaged Electron files
+
